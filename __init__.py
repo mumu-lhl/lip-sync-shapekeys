@@ -46,14 +46,9 @@ def executable_name() -> str:
 
 
 def find_rhubarb_binary() -> Optional[Path]:
-    candidates = [
-        addon_dir() / "bin" / executable_name(),
-        addon_dir().parent / "rhubarb_lipsync" / "bin" / executable_name(),
-        addon_dir().parent / "bin" / executable_name(),
-    ]
-    for candidate in candidates:
-        if candidate.exists() and candidate.is_file():
-            return candidate
+    candidate = addon_dir() / "bin" / executable_name()
+    if candidate.exists() and candidate.is_file():
+        return candidate
     return None
 
 
