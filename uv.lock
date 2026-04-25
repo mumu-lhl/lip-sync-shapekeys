@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.13"
+
+[[package]]
+name = "fake-bpy-module-latest"
+version = "20260424"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b2/21/d3791c607be46998a29beb9c424d7bc6c0398ed8464a86d73fdfcd0a6677/fake_bpy_module_latest-20260424.tar.gz", hash = "sha256:cd819c29b2bd0136eca70f83ad949563ac6ce9d52b3f3f5a2eacadc2f522383e", size = 899414, upload-time = "2026-04-24T07:49:33.956Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d6/54/5c94beaa642291ed3c5ba9510483f5ce7356a8c23a9bb4520e8fcdd1f832/fake_bpy_module_latest-20260424-py3-none-any.whl", hash = "sha256:9958dbeb61cf70ec35ebb67c0a9e97b6e0002f1e4ab2d960006536217aca3002", size = 1044014, upload-time = "2026-04-24T07:49:30.997Z" },
+]
+
+[[package]]
+name = "lip-sync-shapekeys"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "fake-bpy-module-latest" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "fake-bpy-module-latest", specifier = ">=20260424" }]

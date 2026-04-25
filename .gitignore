@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Blender
+*.blend1
+*.zip
+
+uma_preset_importer/
+
+# AI
+.gemini/
+.codex
